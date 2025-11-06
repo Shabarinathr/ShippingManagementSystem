@@ -1,0 +1,14 @@
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\bin\Debug\net9.0\ShippingManagementSystem.exe
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\bin\Debug\net9.0\ShippingManagementSystem.deps.json
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\bin\Debug\net9.0\ShippingManagementSystem.runtimeconfig.json
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\bin\Debug\net9.0\ShippingManagementSystem.dll
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\bin\Debug\net9.0\ShippingManagementSystem.pdb
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.AssemblyInfoInputs.cache
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.AssemblyInfo.cs
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.dll
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\refint\ShippingManagementSystem.dll
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.pdb
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.genruntimeconfig.cache
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ref\ShippingManagementSystem.dll
