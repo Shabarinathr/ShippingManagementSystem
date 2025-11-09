@@ -6,68 +6,74 @@ namespace ShippingManagementSystem
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("===== Shipping Order Entry System =====\n");
+            Console.WriteLine("===== Shipping Cost Calculator with Business Logic =====");
 
             string shipperName = "ABC Exports Ltd";
-            Console.WriteLine($"Shipper Name: {shipperName}");
-
             int shipmentId = 1001;
+            double weightKg = 1200;
+            string destination = "Mumbai";
+            bool isInternational = false;
+
+            Console.WriteLine($"Shipper Name: {shipperName}");
             Console.WriteLine($"Shipment ID: {shipmentId}");
+            Console.WriteLine($"Weight (kg): {weightKg}");
+            Console.WriteLine($"Destination: {destination}");
 
-            double weightKg = 500.50;
-            Console.WriteLine($"Weight: {weightKg} kg");
 
-            double baseCost = 5000;
-            Console.WriteLine($"Base Shipping Cost: ${baseCost}");
+            double baseCostPerKg = 10;
+            double shippingCost = weightKg * baseCostPerKg;
 
-            bool isInternational = true;
-            Console.WriteLine($"International Shipment: {isInternational}");
-            
-            double finalCost;
+            Console.WriteLine($"\n Initial Cost: ${shippingCost}");
+
+            if (weightKg > 1000)
+            {
+                double discount = shippingCost * 0.10;
+                shippingCost = shippingCost - discount;
+                Console.WriteLine($" Bulk Discount Applied(10%): -${discount}");
+                Console.WriteLine($"Cost after discount: ${shippingCost}");
+            }
+            else
+            {
+                Console.WriteLine("No bulk discount (weight< 1000 kg)");
+            }
             if (isInternational)
             {
-                finalCost = (baseCost + (weightKg * 10)) * 1.5;
-                Console.WriteLine("International shipping : 50% surcharge applied");
+                double surcharge = shippingCost * 0.50;
+                shippingCost = shippingCost + surcharge;
+                Console.WriteLine($" Internatinal Surcharge (50%): +${surcharge}");
             }
             else
             {
-                finalCost = baseCost + (weightKg * 10);
+                Console.WriteLine(" Domestic shipment - no Surcharge");
             }
-                Console.WriteLine($"Final Cost: ${finalCost}");
 
-            string status = "Pending";
-            Console.WriteLine($"Status: {status}");
+            double taxRate = 0;
+            string taxLocation = "";
 
-            Console.WriteLine("\nPress any key to exit.......");
-
-            Console.WriteLine("\n------ Second Shipment ------");
-            string shipperName2 = "XYZ Imports Inc";
-            int shipmentId2 = 1002;
-            double weightKg2 = 1200;
-            string destination2 = "Delhi";
-            bool isInternational2 = true;
-            string status2 = "In Transit";
-
-            double baseCost2 = 5000;
-            double finalCost2;
-            if (isInternational2)
+            switch (destination)
             {
-                finalCost2 = (baseCost2 + (weightKg2 * 10)) * 1.5;
+                case "Mumbai":
+                    taxRate = 0.05;
+                    taxLocation = "Mumbai GST";
+                    break;
+                case "Delhi":
+                    taxRate = 0.08;
+                    taxLocation = "Delhi GST";
+                    break;
+                case "Default":
+                    taxRate = 0.07;
+                    taxLocation = "Standard GST";
+                    break;
             }
-            else
-            {
-                finalCost2 = baseCost2 + (weightKg2 * 10);
-            }
-            Console.WriteLine($"Shipper Name: {shipperName2}");
-            Console.WriteLine($"Shipment ID : {shipmentId2}");
-            Console.WriteLine($"weight: {weightKg2}");
-            Console.WriteLine($"Destination: {destination2}");
-            Console.WriteLine($"International Shipment: {isInternational2}");
-            Console.WriteLine($"Final Cost: {finalCost2}");
-            Console.WriteLine($"Status: {status2}");
+            double tax = shippingCost * taxRate;
+            shippingCost = shippingCost + tax;
 
+            Console.WriteLine($"\n{taxLocation} ({taxRate * 100}%): +${tax}");
+
+            Console.WriteLine($"\n--- Final Shipping Cost: ${shippingCost} ---");
+
+            Console.WriteLine("\n Press any key to exit ...");
             Console.ReadKey();
-
         }
     }
 }

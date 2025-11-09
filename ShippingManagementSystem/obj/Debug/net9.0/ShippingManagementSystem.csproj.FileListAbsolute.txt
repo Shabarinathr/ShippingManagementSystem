@@ -12,3 +12,4 @@ C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\
 C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.pdb
 C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.genruntimeconfig.cache
 C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ref\ShippingManagementSystem.dll
+C:\Users\hp\Desktop\ShippingManagementSystem\ShippingManagementSystem\obj\Debug\net9.0\ShippingManagementSystem.sourcelink.json
